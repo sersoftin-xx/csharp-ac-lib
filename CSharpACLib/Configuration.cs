@@ -1,6 +1,6 @@
 ﻿namespace CSharpACLib
 {
-    class Configuration
+    public class Configuration
     {
         public string BaseApiUrl { get; set; }
         public byte[] PublicKeyHash { get; set; }

@@ -4,7 +4,7 @@ using CSharpACLib.Hardware;
 
 namespace CSharpACLib
 {
-    class AccessControl
+    public class AccessControl
     {
         private readonly Api _api;
         private readonly Configuration _config;
