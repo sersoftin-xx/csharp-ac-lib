@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CSharpACLib.Entities;
 using CSharpACLib.Hardware;
 
@@ -40,6 +41,16 @@ namespace CSharpACLib
             {
                 return false;
             }
+        }
+
+        public List<Product> GetProducts()
+        {
+            return _api.GetProductsList();
+        }
+
+        public Product GetProductInfo(int productId)
+        {
+            return _api.GetProductInfo(productId);
         }
 
         public Bid RequestAccess()

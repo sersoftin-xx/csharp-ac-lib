@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace CSharpACLib.Entities
 {
-    class Product
+    public class Product
     {
         [JsonProperty(PropertyName = "id")]
         public int Id;
