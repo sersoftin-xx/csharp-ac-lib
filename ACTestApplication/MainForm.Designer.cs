@@ -35,10 +35,10 @@
             // 
             // BidIdTextBox
             // 
-            this.BidIdTextBox.Location = new System.Drawing.Point(139, 12);
+            this.BidIdTextBox.Location = new System.Drawing.Point(123, 12);
             this.BidIdTextBox.Name = "BidIdTextBox";
             this.BidIdTextBox.ReadOnly = true;
-            this.BidIdTextBox.Size = new System.Drawing.Size(153, 20);
+            this.BidIdTextBox.Size = new System.Drawing.Size(169, 20);
             this.BidIdTextBox.TabIndex = 0;
             // 
             // SubmitBidButton
@@ -49,6 +49,7 @@
             this.SubmitBidButton.TabIndex = 1;
             this.SubmitBidButton.Text = "Отправить заявку";
             this.SubmitBidButton.UseVisualStyleBackColor = true;
+            this.SubmitBidButton.Click += new System.EventHandler(this.SubmitBidButton_Click);
             // 
             // ProductsCombobox
             // 
@@ -56,7 +57,7 @@
             this.ProductsCombobox.FormattingEnabled = true;
             this.ProductsCombobox.Location = new System.Drawing.Point(12, 12);
             this.ProductsCombobox.Name = "ProductsCombobox";
-            this.ProductsCombobox.Size = new System.Drawing.Size(121, 21);
+            this.ProductsCombobox.Size = new System.Drawing.Size(105, 21);
             this.ProductsCombobox.TabIndex = 2;
             // 
             // MainForm
