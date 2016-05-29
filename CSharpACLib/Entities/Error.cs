@@ -5,10 +5,10 @@ namespace CSharpACLib.Entities
     class Error
     {
         [JsonProperty(PropertyName = "code")]
-        public int Code;
+        public int Code { get; set; }
         [JsonProperty(PropertyName = "message")]
-        public string Message;
+        public string Message { get; set; }
         [JsonProperty(PropertyName = "url")]
-        public string Url;
+        public string Url { get; set; }
     }
 }

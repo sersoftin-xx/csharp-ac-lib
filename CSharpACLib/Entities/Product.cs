@@ -6,12 +6,14 @@ namespace CSharpACLib.Entities
     public class Product
     {
         [JsonProperty(PropertyName = "id")]
-        public int Id;
+        public int Id { get; set; }
+
         [JsonProperty(PropertyName = "name")]
-        public string Name;
+        public string Name { get; set; }
+
         [JsonProperty(PropertyName = "addition_date")]
-        public DateTime? AdditionDate;
+        public DateTime? AdditionDate { get; set; }
         [JsonProperty(PropertyName = "decription")]
-        public string Description;
+        public string Description { get; set; }
     }
 }

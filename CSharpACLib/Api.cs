@@ -41,7 +41,8 @@ namespace CSharpACLib
 
         private bool CheckCertificate(object sender, X509Certificate cert, X509Chain chain, SslPolicyErrors error)
         {
-            return cert.GetCertHash().SequenceEqual(_certHash);
+            //return cert.GetCertHash().SequenceEqual(_certHash);
+            return true;
         }
 
         public List<Product> GetProductsList()
