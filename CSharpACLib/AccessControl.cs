@@ -17,16 +17,7 @@ namespace CSharpACLib
 
         public bool AccessAllowed()
         {
-            var tower = new Tower(_config.HashSalt);
-            try
-            {
-                var bid = _api.Check(tower.UniqueKey, _config.ProductId);
-                return bid.IsActive && !bid.IsExpired;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return AccessAllowed(_config.ProductId);
         }
 
         public bool AccessAllowed(int productId)
@@ -55,8 +46,7 @@ namespace CSharpACLib
 
         public Bid RequestAccess()
         {
-            var tower = new Tower(_config.HashSalt);
-            return _api.Add(tower.Name, tower.UniqueKey, _config.ProductId);
+            return RequestAccess(_config.ProductId);
         }
 
         public Bid RequestAccess(int productId)
